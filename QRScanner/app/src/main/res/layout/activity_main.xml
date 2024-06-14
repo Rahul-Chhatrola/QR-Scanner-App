@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR Code Scanner"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+    
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Start Scanning"
+        android:layout_below="@id/tv_instruction"
+        android:layout_marginTop="300dp"
+        android:onClick="startQRCodeScanner" />
+    <TextView
+        android:id="@+id/tv_scanned_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scanned Data:"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_below="@id/btn_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
